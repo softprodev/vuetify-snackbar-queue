@@ -18,12 +18,12 @@ Vue.use(VuetifySnackbarQueue)
 
 ```vue
 <template>
-      <v-container fluid>
-        <v-row>
-          <v-col cols="2">
+      <v-container grid-list-lg fluid>
+        <v-layout wrap>
+          <v-flex xs2>
             <v-btn color="primary" @click="addItem">Add to Queue</v-btn>
-          </v-col>
-        </v-row>
+          </v-flex>
+        </v-layout>
         <VSnackbarQueue :items="items" top right @remove="removeItem"></VSnackbarQueue>
       </v-container>
 </template>

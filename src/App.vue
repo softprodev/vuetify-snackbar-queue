@@ -1,12 +1,12 @@
 <template>
     <v-app>
         <v-content>
-            <v-container fluid>
-                <v-row>
-                    <v-col cols="2">
+            <v-container fluid grid-list-lg>
+                <v-layout wrap>
+                    <v-flex xs2>
                         <v-btn @click="addItem" color="primary">Add to Queue</v-btn>
-                    </v-col>
-                </v-row>
+                    </v-flex>
+                </v-layout>
                 <v-snackbar-queue
                     :items="items"
                     @remove="removeItem"
